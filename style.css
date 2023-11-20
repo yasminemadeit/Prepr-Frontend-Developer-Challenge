@@ -1,0 +1,155 @@
+
+* {
+    list-style: none; /* Remove default list styles */
+    text-decoration: none; /* Remove underline */
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+.navbar ul {
+   
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+
+    
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar li.nav-item {
+    display: flex;
+    display: flex;
+    margin-right: 10px; /* Adjust as needed */
+    
+}
+
+.navbar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar li.nav-logo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar li.nav-profile {
+    display: flex;
+}
+
+.navbar li.nav-item a {
+    color: #000; /* Set your desired text color */
+   
+}
+
+/* Optional: Change color on hover */
+.navbar li.nav-item a:hover {
+    color: #555; /* Set your desired text color on hover */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.main-hero {
+    padding: 20px; /* Adjust the padding to create space between navbar and hero */
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    text-align: center;
+    
+    
+}
+
+.main-hero img {
+    max-width: 100%; /* Make the image responsive within its container */
+    height: auto;
+    display: block; /* Remove extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+    opacity: 70%;
+}
+
+.hero-content {
+   position: absolute;
+    max-width: 60%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333; /* Adjust the text color as needed */
+    padding: 5%;
+    font-weight: 600;
+}
+
+.hero-content h1{
+    margin-bottom: 20px; /* Adjust the margin as needed */
+
+}
+
+.hero-content p{
+    margin-bottom: 30px; /* Adjust the margin as needed */
+
+}
+
+.hero-content h3{
+    margin-bottom: 20px; /* Adjust the margin as needed */
+
+}
+
+.hero-search{
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.hero-search input {
+    width: 400px; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+   
+   
+}
+
+.hero-search button {
+    margin-left: 10px; /* Adjust the margin as needed */
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pills-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between pills as needed */
+    flex-wrap: wrap;
+
+}
+
+.pill {
+    padding: 8px 12px; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Set background color for the pills */
+    border-radius: 20px; /* Adjust border-radius for pill shape */
+    cursor: pointer;
+    /* Add other styling as needed */ 
+}
+
+.selected {
+    background-color: #3498db; /* Change to your desired selected color */
+}
+  

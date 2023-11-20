@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css" />
+    <script src="script.js"></script>
+    <title>Prepr Labs Homepage</title>
+
+</head>
+<body>
+    <nav class ="navbar">
+       
+        <div class ="navbar-left">
+            <ul>
+                <li class="nav-logo">
+                    <a href="https://preprlabs.org/explore" data-qa="Top Nav: Explore - Prepr Logo" class=" waves-effect waves-light" previewlistener="true">
+                        <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png" style="width:100px!important" class="home_hint" alt="prepr">
+                    </a>
+                </li>
+                <li class ="nav-item">
+                    <a href="#" class="ripple-effect mouse-over">Explore</a>
+                </li>
+                <li class ="nav-item">
+                    <a href="#" class="ripple-effect mouse-over">Dashboard</a>
+                </li>
+                <li class ="nav-item">
+                    <a href="#" class="ripple-effect mouse-over">My Challenges</a>
+                </li>
+                <li class ="nav-item">
+                    <a href="#" class="ripple-effect mouse-over">My Labs</a>
+                </li>
+                <li class ="nav-item">
+                    <a href="#" class="ripple-effect mouse-over">My Projects</a>
+                </li>
+                <li class ="nav-item">
+                    <a href="#" class="ripple-effect mouse-over">Career Explorer</a>
+                </li>
+                
+
+            </ul>
+
+
+        
+
+            <li class ="nav-item">
+                <a class="waves-effect waves-block" data-qa="Top Nav: Notifications" href="https://preprlabs.org/notifications" previewlistener="true">
+                    <img src="https://preprlabs.org/assets/images/header/bell-icon.svg" aria-label="Notifications">
+                                        </a>
+            </li>
+            <li class="nav-item">
+                <a class="waves-effect waves-block" data-qa="Top Nav: Inbox" href="https://preprlabs.org/chat" previewlistener="true">
+                    <img src="https://preprlabs.org/assets/images/header/inbox-icon.svg" aria-label="{ __('labels.labels_inbox') }}" style="width:27px; height: 27px">
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="waves-effect waves-block" data-qa="Top Nav: Intercom Help" href="https://intercom.help/preprme/en/" previewlistener="true">
+                    <img src="https://preprlabs.org/assets/images/header/help-icon.svg" aria-label="Help">
+                </a>
+            </li>
+
+            <li class="nav-item searchbar">
+                <input type="text" class="form-control" placeholder="Search..." id="nav_search" autocomplete="off">
+            </li>
+
+            <li class="nav-profile">
+                <a href="#" data-qa="Top Nav: Profile Dropdown" class="nav-link user_details_drop dropdown-toggle waves-effect waves-light" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" previewlistener="true">
+                    <img class="header-profile-image" src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/front/img/default-user.png" style="width:35px; height: 35px">
+                </a>
+            </li>
+
+            <li class="nav-item dropdown grid">
+                <a href="#" class="nav-link user_details_drop dropdown-toggle waves-effect waves-light" id="dropdownMenuButton" role="button" data-qa="Top Nav: Grid" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://preprlabs.org/assets/images/header/app-icon.svg" aria-label="Apps">
+                </a>
+            </li>
+
+        </div>
+
+        
+        
+    </nav>
+    <div class="flex-container">
+        <div class="main-hero">
+            <!-- Content of your main hero section goes here -->
+            <img src="images/hero_back1.jpg" alt="Hero Image">
+            
+            <div class="hero-content">
+                <h1>Explore Your Interests</h1>
+                <p>We’ll recommend content based on your interests we’ve listed here.
+                    <br>
+                    Feel free to add or remove topics to customize your experience!</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="Search...">
+                    <button type="button">
+                        <!-- Magnifying glass SVG -->
+                       <img src="images/search-icon.svg" alt="magnifying glass" style="width: 30px; height: 30px">
+                    </button>
+                </div>
+                
+                <h3>Click an interest to narrow your recommendations</h3>
+                
+                <div class="pills-container">
+                    <!-- Pill 1 -->
+                    <div class="pill" onclick="toggleColor(this)">Training</div>
+                    <!-- Pill 2 -->
+                    <div class="pill" onclick="toggleColor(this)">Network Security</div>
+                     <!-- Pill 3 -->
+                     <div class="pill" onclick="toggleColor(this)">Customer Conversion</div>
+                      <!-- Pill 4 -->
+                    <div class="pill" onclick="toggleColor(this)">Excel Dashboards</div>
+                     <!-- Pill 5 -->
+                     <div class="pill" onclick="toggleColor(this)">Project Leadership</div>
+                      <!-- Pill 6 -->
+                    <div class="pill" onclick="toggleColor(this)">Matplotlib</div>
+                     <!-- Pill 7 -->
+                     <div class="pill" onclick="toggleColor(this)">Full Stack Development</div>
+                      <!-- Pill 8 -->
+                    <div class="pill" onclick="toggleColor(this)">Self Reflection</div>
+                     <!-- Pill 9 -->
+                     <div class="pill" onclick="toggleColor(this)">Ecommerce</div>
+                      <!-- Pill 10 -->
+                    <div class="pill" onclick="toggleColor(this)">Wellbeing</div>
+                   
+                </div>
+
+
+
+            </div>
+
+            
+
+
+           
+            
+        </div>
+
+    </div>
+
+   
+
+
+
+
+    
+</body>
+</html>
