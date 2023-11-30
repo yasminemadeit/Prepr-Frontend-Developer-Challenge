@@ -18,24 +18,17 @@
                         <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png" style="width:100px!important" class="home_hint" alt="prepr">
                     </a>
                 </li>
+                
                 <li class ="nav-item">
-                    <a href="#" class="ripple-effect mouse-over">Explore</a>
+                    <a href="#" class="ripple-effect mouse-over">Challenges</a>
                 </li>
                 <li class ="nav-item">
-                    <a href="#" class="ripple-effect mouse-over">Dashboard</a>
+                    <a href="#" class="ripple-effect mouse-over">Labs</a>
                 </li>
                 <li class ="nav-item">
-                    <a href="#" class="ripple-effect mouse-over">My Challenges</a>
+                    <a href="#" class="ripple-effect mouse-over">Projects</a>
                 </li>
-                <li class ="nav-item">
-                    <a href="#" class="ripple-effect mouse-over">My Labs</a>
-                </li>
-                <li class ="nav-item">
-                    <a href="#" class="ripple-effect mouse-over">My Projects</a>
-                </li>
-                <li class ="nav-item">
-                    <a href="#" class="ripple-effect mouse-over">Career Explorer</a>
-                </li>
+               
                 
 
             </ul>
@@ -44,37 +37,48 @@
         
 
             <li class ="nav-item">
-                <a class="waves-effect waves-block" data-qa="Top Nav: Notifications" href="https://preprlabs.org/notifications" previewlistener="true">
-                    <img src="https://preprlabs.org/assets/images/header/bell-icon.svg" aria-label="Notifications">
-                                        </a>
+                    <img src="images/notification-light.png" id= "notification" style="width:27px; height: 27px">
+                                       
             </li>
             <li class="nav-item">
-                <a class="waves-effect waves-block" data-qa="Top Nav: Inbox" href="https://preprlabs.org/chat" previewlistener="true">
-                    <img src="https://preprlabs.org/assets/images/header/inbox-icon.svg" aria-label="{ __('labels.labels_inbox') }}" style="width:27px; height: 27px">
-                </a>
+                <img src="images/chat-light.png" id= "chat" style="width:27px; height: 27px">
             </li>
 
             <li class="nav-item">
-                <a class="waves-effect waves-block" data-qa="Top Nav: Intercom Help" href="https://intercom.help/preprme/en/" previewlistener="true">
-                    <img src="https://preprlabs.org/assets/images/header/help-icon.svg" aria-label="Help">
-                </a>
+                <img src="images/help-light.png" id= "help" style="width:27px; height: 27px">
             </li>
 
             <li class="nav-item searchbar">
                 <input type="text" class="form-control" placeholder="Search..." id="nav_search" autocomplete="off">
             </li>
 
-            <li class="nav-profile">
-                <a href="#" data-qa="Top Nav: Profile Dropdown" class="nav-link user_details_drop dropdown-toggle waves-effect waves-light" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" previewlistener="true">
-                    <img class="header-profile-image" src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/front/img/default-user.png" style="width:35px; height: 35px">
-                </a>
+            <li class="nav-item ">
+                <img src="images/moon.png" id= "theme" alt="" style= "width:27px">
             </li>
 
-            <li class="nav-item dropdown grid">
-                <a href="#" class="nav-link user_details_drop dropdown-toggle waves-effect waves-light" id="dropdownMenuButton" role="button" data-qa="Top Nav: Grid" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="https://preprlabs.org/assets/images/header/app-icon.svg" aria-label="Apps">
-                </a>
+            <li class="nav-profile" id="profileDropdown">
+                <img src="images/user-light.png" id = "user" style="width:27px; height: 27px">
+                <div class="dropdown-content">
+                    <!-- Dropdown content for profile -->
+                    <a href="#">Profile</a>
+                    <a href="#">Newsfeed</a>
+                    <a href="#">Logout</a>
+                </div>
             </li>
+
+            <li class="nav-item-dropdown-grid" id="gridDropdown">
+                <img src="images/hamburger-light.png" id= "menu" style="width:27px; height: 27px; padding: 20%;" >
+                <div class="dropdown-content">
+                    <!-- Dropdown content for grid -->
+                    <a href="#">Labs</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Challenges</a>
+                </div>
+            </li>
+            <li class="nav-item-dark">
+
+            </li>
+            
 
         </div>
 
@@ -93,10 +97,7 @@
                     Feel free to add or remove topics to customize your experience!</p>
                 <div class="hero-search">
                     <input type="text" placeholder="Search...">
-                    <button type="button">
-                        <!-- Magnifying glass SVG -->
-                       <img src="images/search-icon.svg" alt="magnifying glass" style="width: 30px; height: 30px">
-                    </button>
+ 
                 </div>
                 
                 <h3>Click an interest to narrow your recommendations</h3>
@@ -128,21 +129,126 @@
 
 
             </div>
-
-            
-
-
-           
             
         </div>
+    
 
     </div>
 
+        <div class="container">
+            <div class="section-header-container">
+                <div class="section-header">Labs</div>
+                <div class="section-header">Challenges</div>
+                <div class="section-header">Projects</div>
+            </div> 
+            <!-- Add a new container for the content -->
+            <div class="content-container">
+                <div id="labs-content" class="content"> <!-- Give each content div a unique ID -->
+                    <!-- Content for Labs -->
+                    <div class="content-component">
+                        <div class="comp-col1">
+                            <div class="flex-row">
+                                <img src="images/science.svg" alt="Science Image" style="width:100%;">
+                            </div>
+                            <div class="flex-row">
+                                <p>Hosted by Prepr</p>
+                            </div>
+                        </div>
+    
+                        <div class="comp-col2">
+                            <div class="title-row">
+                                <h2>Lab Title</h3>
+                            </div>
+                            <div class="flex-row">
+                                <img src="images/beaker.png" alt="beaker">
+                                <p>
+                                    <strong>Public Lab</strong>
+                                <p>
+                            </div>
+                            <div class="par-row">
+                                <p>If you're here then you're a passionate employment service provider who’s constantly looking for new tools and concepts. We've prepared a series of Challenges just for you! The Challenges in this Lab are designed to help you learn how you can get the most out of our platform, get started today!</p>
+                            </div>
+                            <div class="flex-row">
+                                <div class="pill">Prepr Labs</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+                <div id="challenges-content" class="content">
+                    <!-- Content for Challenges -->
+                    <div class="content-component">
+                        <div class="comp-col1">
+                            <div class="flex-row">
+                                <img src="images/challenge.svg" alt="Challenge Image" style="width:100%;">
+                            </div>
+                            <div class="flex-row">
+                                <p>Hosted by Prepr</p>
+                            </div>
+                        </div>
+    
+                        <div class="comp-col2">
+                            <div class="title-row">
+                                <h2>Challenge Title</h3>
+                            </div>
+                            <div class="flex-row">
+                                <img src="images/puzzle.png" style= "width:20px; height:20px;" alt="puzzle">
+                                <p>
+                                    <strong>Public Challenge</strong>
+                                <p>
+                            </div>
+                            <div class="par-row">
+                                <p>JMeter is an open source testing software used for load and performance testing, functional testing, regression testing, and more. It can simulate a heavy load on a server or network and output performance data in several ways. Testing web application performance with JMeter is important because it helps to identify performance bottlenecks, enables load testing, facilitates testing of complex scen...</p>
+                            </div>
+                            <div class="flex-row">
+                                <div class="pill">Testing</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
    
+                <div id="projects-content" class="content">
+                    <!-- Content for Projects -->
+                    <div class="content-component">
+                        <div class="comp-col1">
+                            <div class="flex-row">
+                                <img src="images/project.svg" alt="Project Image" style="width:100%;">
+                            </div>
+                            <div class="flex-row">
+                                <p>Hosted by Prepr</p>
+                            </div>
+                        </div>
+    
+                        <div class="comp-col2">
+                            <div class="title-row">
+                                <h2>Jake Johnson's Project</h3>
+                            </div>
+                            <div class="flex-row">
+                                <img src="images/seed.png" style= "width:20px; height:20px;" alt="seed">
+                                <p>
+                                    <strong>Public Project</strong>
+                                <p>
+                            </div>
+                            <div class="par-row">
+                                <p> My very first Project</p>
+                            </div>
+                            <div class="flex-row">
+                                <div class="pill">Prepr Projects</div>
+                            </div>
+                        </div>
 
 
+                    </div>
+                </div>
+            </div>
 
+            
 
+        </div>
     
 </body>
 </html>
